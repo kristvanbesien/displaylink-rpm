@@ -1,0 +1,28 @@
+= Repackaged Displaylink Driver for Fedora 24
+
+== Introduction
+
+The only linux distro Displaylink provides drivers for is Ubuntu. You can download the driver here.
+
+http://www.displaylink.com/downloads/ubuntu
+
+Here you will find a .spec file, and some supporting files that allow you to convert this to a rpm on Fedora. With this rpm I managed to get the ASUS MB169B+ portable display working with my laptop, which runs Fedora 24. I have not been able to test other Red Hat variants, or other Displaylink hardware.
+
+[NOTE]
+You need to have all the usual tools installed so you can build rpms. I suppose you know how to get these.
+
+== Create the RPM
+
+. Clone this repository.
+
+. Download the binary driver (currently version 1.2.58) from the displaylink site, and copy it in to the displaylink-rpm directory created above.
+
+. Run these script
++
+.[Fedora24]
+----
+./displaylink-driver-1.2.58.run --noexec --keep
+fedpkg --dist f24 local
+----
+
+. You now should have a source and a binary package. Install the binary package. Connect a displaylink powered display and this should just work.

@@ -1,0 +1,6 @@
+*.rpm
+/x86_64
+
+displaylink-driver-1.2.58.run
+displaylink-driver-1.2.58
+*.log
