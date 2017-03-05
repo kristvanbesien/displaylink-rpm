@@ -1,11 +1,11 @@
 %define module evdi 
-%define version 1.2.58 
+%define version 1.3.52 
 
 
 Name: displaylink-driver
 Version: %{version}
 Release: 1%{?dist}
-Summary: Driver for displaylink adaptros and displays
+Summary: Driver for displaylink adaptors and displays
 
 License: Complicated
 Source0: displaylink-driver-%{version}.run

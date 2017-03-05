@@ -15,14 +15,13 @@ You need to have all the usual tools installed so you can build rpms. I suppose 
 
 . Clone this repository.
 
-. Download the binary driver (currently version 1.2.58) from the displaylink site, and copy it in to the displaylink-rpm directory created above.
+. Download the binary driver (currently version 1.2.58) from the displaylink site, and copy it in to the displaylink-rpm directory created above. Unzip it.
 
-. Run these script
+. Run these commands: (Note versions might be different...)
 +
-.[Fedora24]
+.[Fedora25]
 ----
-./displaylink-driver-1.2.58.run --noexec --keep
-fedpkg --dist f24 local
+fedpkg --dist f25 local
 ----
 
 . You now should have a source and a binary package. Install the binary package. Connect a displaylink powered display and this should just work.
